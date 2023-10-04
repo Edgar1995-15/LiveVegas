@@ -7,7 +7,7 @@ function Main() {
   const scrollToSection = (sectionId) => {
     const sectionElement = document.getElementById(sectionId);
     if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: 'smooth' });
+      sectionElement.scrollIntoView({ behavior: "smooth" });
     }
   };
   return (
@@ -16,15 +16,26 @@ function Main() {
         <div className="left-block">
           <h1 className="title">Live Bold, Win Bolder</h1>
           <p className="description">
-            Lorem ipsum dolor sit amet consectetur. Faucibus tristique eu
-            viverra pellentesque tempor malesuada risus. Consequat consectetur
-            mi iaculis egestas venenatis rutrum. Interdum ultrices aliquam
-            cursus enim laoreet cursus. Et eleifend nibh dolor tellus purus
-            phasellus mi.{" "}
+            Live Vegas Online Casino is your gateway to exceptional gaming. We
+            offer a bespoke and flawless experience for every player with our
+            portfolio of , our commitment to top-level technological solutions
+            and advanced streaming technologies. Discover the pinnacle of
+            personalised entertainment with us. Our mission is to provide you
+            with the ultimate online casino experience. We are committed to
+            delivering top-notch entertainment in a exclusive games and VIP
+            rooms safe and responsible environment.
           </p>
           <div className="actions">
-            <Button text="CONTACT US" className="transparent-button" onClick={() => scrollToSection('contact-us')} />
-            <Button text="GAMES" className="filled-button" onClick={() => scrollToSection('games')} />
+            <Button
+              text="CONTACT US"
+              className="transparent-button"
+              onClick={() => scrollToSection("contact-us")}
+            />
+            <Button
+              text="GAMES"
+              className="filled-button"
+              onClick={() => scrollToSection("games")}
+            />
           </div>
         </div>
         <img src={casino} alt="" className="right-block" />

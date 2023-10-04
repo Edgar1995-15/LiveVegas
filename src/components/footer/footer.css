@@ -33,18 +33,18 @@
         padding-top: 100px;
     }
     .footer-logo {
-        max-width: 120px;
+        max-width: 100px;
     }
     .footer-content {
         width: 90%;
     }
     .mailto a {
-        font-size: 14px;
+        font-size: 12px;
     }
     .socials {
-        gap: 15px;
+        gap: 10px;
     }
     .socials a img {
-        max-width: 30px;
+        max-width: 25px;
     }
 }

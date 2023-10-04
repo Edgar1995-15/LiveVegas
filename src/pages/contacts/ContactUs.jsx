@@ -31,7 +31,7 @@ function ContactUs() {
             </span>
           </div>
           <div className="additinal-border">
-            <span className="bottom-border">
+            <span className="bottom-border-area">
               <textarea id="note" name="note" placeholder="Leave a Note" />
             </span>
           </div>

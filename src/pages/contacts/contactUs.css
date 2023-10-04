@@ -48,7 +48,7 @@
   position: relative;
   background-color: transparent;
 }
-.bottom-border {
+.bottom-border, .bottom-border-area {
   position: relative;
 }
 
@@ -73,6 +73,29 @@
   right: -5px;
   border-left: none;
   border-bottom: none;
+}
+
+.bottom-border-area::before,
+.bottom-border-area::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #edcf65;
+}
+
+.bottom-border-area::before {
+  top: 8px;
+  left: -5px;
+  border-top: none;
+  border-right: none;
+}
+
+.bottom-border-area::after {
+  top: 8px;
+  right: -5px;
+  border-left: none;
+  border-top: none;
 }
 
 .bottom-border::before,

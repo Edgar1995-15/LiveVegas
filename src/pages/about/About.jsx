@@ -14,22 +14,19 @@ function About() {
         </div>
         <div className="about-text">
           <p>
-            Lorem ipsum dolor sit amet consectetur. Convallis tortor eu aliquet
-            volutpat rhoncus. Est volutpat ut lectus suspendisse. Praesent
-            elementum dui hendrerit turpis porttitor rhoncus bibendum. Hendrerit
-            tempus bibendum pellentesque vivamus eu. Nunc bibendum feugiat
-            ligula sed ac mi. Bibendum risus platea et egestas. Integer eu nec
-            pellentesque mattis diam volutpat elit risus eget. Phasellus
-            ultrices mus in dictum sed magna egestas euismod. <br /> <br /> Quis elementum
-            arcu cursus dui faucibus bibendum. Quisque felis tortor odio nunc
-            vulputate. Nunc eget vel faucibus massa scelerisque. Tempus eu
-            tempus urna nisl ut amet ac vitae. Ornare porttitor nisl neque vel.
-            A quis nulla mi nisl. Ac at consequat risus lobortis. <br /> <br /> Ullamcorper
-            luctus eget tincidunt elementum dis bibendum. Vel nulla vitae
-            integer interdum molestie gravida venenatis. Purus dis varius et sed
-            malesuada interdum lobortis nunc. Sed fermentum in elementum hac
-            erat lacus nibh et. Sit dictum facilisi metus id amet accumsan.
-            Consequat id enim hac tellus.
+            Live Vegas is a live casino game provider offering top-notch gaming
+            solutions to the world’s prominent live casinos. We combine the
+            gaming industry’s best practices and cutting-edge technology to
+            deliver high-quality services.User experience and a high level of
+            partnership are top priorities for us. Thant’s why <br /> <br />
+            We deliver our services in a professional work environment promoting
+            a positive impact on the gambling society. We deliver the absolute
+            finest and the most innovative gaming solutions. <br /> <br />
+            We grow to meet the changing needs of the gambling industry. We
+            provide a “private gaming experience” creating the most relaxed
+            environment for the players. <br /> <br />
+            We offer unique live casino VIP tables ensuring an unforgettable
+            one-of-a-kind game. We promote responsible gambling.
           </p>
         </div>
       </div>
