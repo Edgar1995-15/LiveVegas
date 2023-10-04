@@ -1,0 +1,25 @@
+.custom-button {
+  padding: 11px 25px 12px 25px;
+  cursor: pointer;
+  min-width: 180px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+.custom-button:hover {
+  opacity: 0.8;
+}
+.transparent-button {
+  background: transparent;
+  color: #edcf65;
+  border: 1px solid #edcf65;
+}
+.filled-button {
+  background-color: #edcf65;
+  border: none;
+}
+
+@media (max-width: 468px) {
+  .custom-button {
+    font-size: 18px;
+  }
+}

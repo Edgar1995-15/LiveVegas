@@ -1,0 +1,135 @@
+.contact-main {
+  background-color: #111111;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding-top: 279px;
+}
+.contactus-img {
+  position: absolute;
+  left: 20px;
+  top: 150px;
+}
+.contact-content {
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contacts-form input,
+.contacts-form textarea {
+  height: auto;
+  width: 610px;
+  background: transparent;
+  border: 1px solid #edcf65;
+  padding: 15px 20px 15px 20px;
+  color: #bdbcbc;
+  position: relative;
+}
+.contacts-form input::placeholder,
+.contacts-form textarea::placeholder {
+  color: #bdbcbc;
+}
+.contacts-form textarea {
+  height: 281px;
+}
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.additinal-border {
+  position: relative;
+  background-color: transparent;
+}
+.bottom-border {
+  position: relative;
+}
+
+.additinal-border::before,
+.additinal-border::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #edcf65;
+}
+
+.additinal-border::before {
+  top: -5px;
+  left: -5px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.additinal-border::after {
+  top: -5px;
+  right: -5px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.bottom-border::before,
+.bottom-border::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #edcf65;
+}
+
+.bottom-border::before {
+  top: 25px;
+  left: -5px;
+  border-top: none;
+  border-right: none;
+}
+
+.bottom-border::after {
+  top: 25px;
+  right: -5px;
+  border-left: none;
+  border-top: none;
+}
+.mobile-title {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .contactus-img {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-form input,
+  .contacts-form textarea {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 468px) {
+  .contacts-form input,
+  .contacts-form textarea {
+    max-width: 230px;
+  }
+  .contactus-img {
+    display: none;
+  }
+  .mobile-title {
+    display: block;
+    color: #edcf65;
+    text-align: center;
+  }
+  .contact-main {
+    padding-top: 40px;
+  }
+}
+
+
