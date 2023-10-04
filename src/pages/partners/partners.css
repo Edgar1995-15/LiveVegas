@@ -35,8 +35,13 @@
 .partners-logos {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 80px;
   margin-top: 106px;
+}
+.partners-logos img {
+  width: 200px;
+  object-fit: contain;
 }
 .flags {
   display: flex;

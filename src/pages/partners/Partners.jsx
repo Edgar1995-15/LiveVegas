@@ -1,13 +1,14 @@
 import React from "react";
 import "./partners.css";
 import becomePartners from "../../assets/becomepartner.png";
-import xbet from "../../assets/xbet.png";
-import betconstruct from '../../assets/betconstruct.png';
-import pokerdom from '../../assets/pokerdom.png';
-import uk from '../../assets/unitedkingdom.png';
-import russia from '../../assets/russia.png';
-import turkey from '../../assets/turkey.png';
-import emirates from '../../assets/emirates.png';
+import betconstruct from "../../assets/betconstruct.png";
+import pokerdom from "../../assets/pokerdom.png";
+import uk from "../../assets/unitedkingdom.png";
+import russia from "../../assets/russia.png";
+import turkey from "../../assets/turkey.png";
+import emirates from "../../assets/emirates.png";
+import wpc from "../../assets/wpc.png";
+import technamin from "../../assets/technamin.svg"
 
 function Partners() {
   return (
@@ -37,27 +38,30 @@ function Partners() {
       </div>
       <div className="partners-logos">
         <div>
-            <img src={xbet} alt="1xbet" />
+          <img src={betconstruct} alt="1xbet" />
         </div>
         <div>
-            <img src={betconstruct} alt="1xbet" />
+          <img src={wpc} alt="wpc" />
         </div>
         <div>
-            <img src={pokerdom} alt="1xbet" />
+          <img src={pokerdom} alt="pokerdom" />
+        </div>
+        <div>
+          <img src={technamin} alt="pokerdom" />
         </div>
       </div>
       <div className="flags">
         <div>
-            <img src={uk} alt="united kingdom" />
+          <img src={uk} alt="united kingdom" />
         </div>
         <div>
-            <img src={russia} alt="russia" />
+          <img src={russia} alt="russia" />
         </div>
         <div>
-            <img src={turkey} alt="turkey" />
+          <img src={turkey} alt="turkey" />
         </div>
         <div>
-            <img src={emirates} alt="arabian emirates" />
+          <img src={emirates} alt="arabian emirates" />
         </div>
       </div>
     </div>
