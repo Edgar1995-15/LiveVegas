@@ -51,4 +51,7 @@
     .actions {
         gap: 15px;
     }
+    .main-content {
+        width: 95%;
+    }
 }
