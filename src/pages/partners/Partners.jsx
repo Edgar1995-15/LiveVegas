@@ -7,7 +7,7 @@ import uk from "../../assets/unitedkingdom.png";
 import russia from "../../assets/russia.png";
 import turkey from "../../assets/turkey.png";
 import emirates from "../../assets/emirates.png";
-import wpc from "../../assets/wpc.svg";
+import wpc from "../../assets/wpc.png";
 import technamin from "../../assets/technamin.svg"
 
 function Partners() {
