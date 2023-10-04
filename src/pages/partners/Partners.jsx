@@ -7,8 +7,8 @@ import uk from "../../assets/unitedkingdom.png";
 import russia from "../../assets/russia.png";
 import turkey from "../../assets/turkey.png";
 import emirates from "../../assets/emirates.png";
-import wpc from "../../assets/wpc.png";
-import technamin from "../../assets/technamin.svg"
+import technamin from "../../assets/technamin.svg";
+import wpc1 from '../../assets/wpc1.svg'
 
 function Partners() {
   return (
@@ -41,7 +41,7 @@ function Partners() {
           <img src={betconstruct} alt="1xbet" style={{width: '300px'}} />
         </div>
         <div>
-          <img src={wpc} alt="wpc" />
+          <img src={wpc1} alt="wpc" />
         </div>
         <div>
           <img src={pokerdom} alt="pokerdom" />
