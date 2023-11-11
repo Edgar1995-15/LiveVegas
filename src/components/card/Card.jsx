@@ -1,12 +1,11 @@
 import React from 'react';
-import './card.css'
+import './card.css';
 
-const Card = ({ imageUrl, content }) => {
+
+const Card = ({ animationDirection, imgUrl }) => {
   return (
-    <div className="card">
-      <img src={imageUrl} alt="Card" className="card-image" />
-      <p className='card-content'>{content}</p>
-      <button className='view-more'>VIEW MORE</button>
+    <div className={`card ${animationDirection}-animation`}>
+      <img src={imgUrl} alt="" />
     </div>
   );
 };

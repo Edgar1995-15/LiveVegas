@@ -4,5 +4,7 @@
 }
 
 body {
-  background: #111111;
+  background-image: url("./assets/background/Animation.png");
+  overflow-x: hidden;
+  background-size: auto;
 }

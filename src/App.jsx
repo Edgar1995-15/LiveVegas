@@ -6,6 +6,7 @@ import ContactUs from './pages/contacts/ContactUs';
 import Games from './pages/games/Games';
 import Main from './pages/main/Main';
 import Partners from './pages/partners/Partners';
+import VipRooms from './pages/vip/VipRooms';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Main />
       <Games />
+      <VipRooms />
       <About />
       <Partners />
       <ContactUs />

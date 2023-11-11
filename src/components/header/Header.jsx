@@ -1,12 +1,15 @@
-import React from 'react';
-import './header.css';
-import Logo from '../../assets/Logo.svg';
+import React, { useState } from "react";
+import "./header.css";
+import Logo from "../../assets/Logo.svg";
+import menu from "../../assets/menu-icon.svg";
+import close from "../../assets/close-icon.svg";
 
 function Header() {
+  const [isVisible, setIsVisible] = useState(false);
   const scrollToSection = (sectionId) => {
     const sectionElement = document.getElementById(sectionId);
     if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: 'smooth' });
+      sectionElement.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -17,10 +20,30 @@ function Header() {
           <img src={Logo} alt="Logo" />
         </div>
         <div className="list">
-          <ul>
-            <li onClick={() => scrollToSection('games')}>GAMES</li>
-            <li onClick={() => scrollToSection('about')}>ABOUT</li>
-            <li onClick={() => scrollToSection('contact-us')}>CONTACT US</li>
+          <ul className="desktop-list">
+            <li onClick={() => scrollToSection("games")}>GAMES</li>
+            <li onClick={() => scrollToSection("about")}>ABOUT</li>
+            <li onClick={() => scrollToSection("contact-us")}>CONTACT US</li>
+            <li onClick={() => scrollToSection("vip")}>
+              <button className="vip-button">VIp rooms</button>
+            </li>
+          </ul>
+
+          <ul className="mobile-list">
+            <img src={menu} alt="menu" onClick={() => setIsVisible(true)} />
+            {isVisible && (
+              <div className="opened-menu">
+                <li onClick={() => scrollToSection("games")}>GAMES</li>
+                <li onClick={() => scrollToSection("about")}>ABOUT</li>
+                <li onClick={() => scrollToSection("contact-us")}>
+                  CONTACT US
+                </li>
+                <li>VIP ROOMS</li>
+                <div className="close-menu" onClick={() => setIsVisible(false)}>
+                  <img src={close} alt="close" />
+                </div>
+              </div>
+            )}
           </ul>
         </div>
       </div>

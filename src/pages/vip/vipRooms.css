@@ -1,0 +1,86 @@
+.vip-main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.vip-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+}
+.vip-text {
+  display: flex;
+  justify-content: center;
+}
+.vip-text p {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.vip-games {
+  display: flex;
+  justify-content: center;
+}
+.left-games {
+  animation: slideFromLeft 1s ease-in-out;
+}
+.right-games {
+  animation: slideFromRight 1s ease-in-out;
+}
+
+.vip-desc {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+.vip1 {
+    animation: slideFromBottom 2s ease-in-out;
+}
+.vip2 {
+    animation: slideFromBottom 3s ease-in-out;
+}
+.vip3 {
+    animation: slideFromBottom 4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .vip-games img {
+    max-width: 150px;
+  }
+  .vip-desc {
+    flex-direction: column;
+    align-items: center;
+  }
+  .vip-desc img {
+    max-width: 150px;
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-300%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(300%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(300%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

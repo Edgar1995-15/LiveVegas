@@ -1,21 +1,22 @@
 import React from "react";
 import "./contactUs.css";
-import contactusImage from "../../assets/Contact.png";
 import Button from "../../components/button/Button";
+import contactTitle from "../../assets/titles/Contacts.png";
 
 function ContactUs() {
   return (
     <div className="contact-main" id="contact-us">
-      <img src={contactusImage} alt="contact us" className="contactus-img" />
-      <h1 className="mobile-title">CONTACT US</h1>
+      <div className="contact-title">
+        <img src={contactTitle} alt="" />
+      </div>
       <div className="contact-content">
         <form className="contacts-form">
-          <div className="additinal-border">
+          <div >
             <span className="bottom-border">
               <input type="text" id="name" name="name" placeholder="Name" />
             </span>
           </div>
-          <div className="additinal-border">
+          <div >
             <span className="bottom-border">
               <input
                 type="email"
@@ -25,12 +26,12 @@ function ContactUs() {
               />
             </span>
           </div>
-          <div className="additinal-border">
+          <div >
             <span className="bottom-border">
               <input type="tel" id="phone" name="phone" placeholder="Phone" />
             </span>
           </div>
-          <div className="additinal-border">
+          <div >
             <span className="bottom-border-area">
               <textarea id="note" name="note" placeholder="Leave a Note" />
             </span>

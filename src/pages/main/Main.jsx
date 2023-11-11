@@ -1,7 +1,8 @@
 import React from "react";
 import "./main.css";
-import casino from "../../assets/casino.png";
 import Button from "../../components/button/Button";
+import liveBold from "../../assets/titles/liveBold.png";
+import winBolder from "../../assets/titles/winBolder.png";
 
 function Main() {
   const scrollToSection = (sectionId) => {
@@ -12,9 +13,18 @@ function Main() {
   };
   return (
     <div className="main">
+      {/* <div className="layer1"></div>
+      <div className="layer2"></div> */}
       <div className="main-content">
-        <div className="left-block">
-          <h1 className="title">Live Bold, Win Bolder</h1>
+        <div className="main-title">
+          <div className="title">
+            <div className="left-title">
+              <img src={liveBold} alt="live bold" />
+            </div>
+            <div className="right-title">
+              <img src={winBolder} alt="win bolder" />
+            </div>
+          </div>
           <p className="description">
             Live Vegas Online Casino is your gateway to exceptional gaming. We
             offer a bespoke and flawless experience for every player with our
@@ -31,14 +41,8 @@ function Main() {
               className="transparent-button"
               onClick={() => scrollToSection("contact-us")}
             />
-            <Button
-              text="GAMES"
-              className="filled-button"
-              onClick={() => scrollToSection("games")}
-            />
           </div>
         </div>
-        <img src={casino} alt="" className="right-block" />
       </div>
     </div>
   );

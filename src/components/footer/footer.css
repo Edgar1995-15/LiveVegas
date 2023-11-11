@@ -22,10 +22,17 @@
     font-size: 20px;
     color: #F8FFFC;
 }
+.mailto a:hover {
+    color: #06EEE0;
+}
 .socials {
     display: flex;
     gap: 30px;
     margin-top: 20px;
+}
+
+.socials a:hover path {
+    fill: #06EEE0; /* Change the fill color to #06EEE0 on hover */
 }
 
 @media (max-width: 468px) {

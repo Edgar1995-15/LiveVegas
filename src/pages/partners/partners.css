@@ -1,5 +1,6 @@
 .partners-main {
   background-color: #1a1a1a;
+  box-shadow: 0px 0px 15px 0px #06EEE04D;
 }
 .partners-title {
   padding-top: 100px;
@@ -22,7 +23,7 @@
 }
 .info-numbers {
   font-size: 78px;
-  color: #edcf65;
+  color: #06EEE0;
   text-align: center;
   margin-bottom: 9px;
 }
