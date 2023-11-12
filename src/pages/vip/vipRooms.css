@@ -1,6 +1,5 @@
 .vip-main {
   width: 100%;
-  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -55,6 +54,23 @@
   }
   .vip-desc img {
     max-width: 150px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .vip-games {
+    align-items: center;
+  }
+  .vip-games img {
+    max-width: 200px;
+    height: 80px;
+  }
+  .vip-desc {
+    max-width: 80%;
+    margin: auto;
+  }
+  .vip-desc img {
+    max-width: 400px;
   }
 }
 

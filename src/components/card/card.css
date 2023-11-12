@@ -6,7 +6,7 @@
 
 .card {
   padding-top: 48px;
-  width: 345px;
+  max-width: 345px;
   margin: 0 auto;
 }
 .view-more {
@@ -54,8 +54,8 @@
 }
 
 @media (max-width: 1400px) {
-  .card {
-    width: 280px;
+  .card img{
+    width: 240px;
   }
 }
 
