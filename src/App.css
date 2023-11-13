@@ -8,7 +8,8 @@ body {
   background-size: auto;
 }
 .background2 {
-  background-image: url("./assets/background/bg3.png");
+  /* background-image: url("./assets/background/bg3.png"); */
+  background: #111;
 }
 .background3 {
   background-image: url("./assets/background/bg3.png");
