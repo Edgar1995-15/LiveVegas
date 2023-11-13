@@ -9,8 +9,8 @@ import VipRooms from "./pages/vip/VipRooms";
 
 function App() {
   return (
-    <div className="App">
-      <div className="background2">
+    <div className="App loading">
+      <div className="background2" rel="preload">
         <Main />
         <Games />
         <VipRooms />
