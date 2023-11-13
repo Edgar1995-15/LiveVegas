@@ -45,6 +45,9 @@
 }
 
 @media (max-width: 768px) {
+  .vip-main {
+    min-height: 180vh;
+  }
   .vip-games img {
     max-width: 150px;
   }

@@ -78,6 +78,7 @@
   .about-text {
     width: 90%;
     margin: auto;
+    min-height: 80vh;
   }
 }
 
