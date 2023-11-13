@@ -55,6 +55,18 @@
   .vip-desc img {
     max-width: 150px;
   }
+  .vip-text p {
+    text-align: center;
+  }
+  .vip1 {
+    animation: slideFromRight 2s ease-in-out;
+  }
+  .vip2 {
+    animation: slideFromRight 3s ease-in-out;
+  }
+  .vip3 {
+    animation: slideFromRight 4s ease-in-out;
+  }
 }
 
 @media (max-width: 1550px) {
