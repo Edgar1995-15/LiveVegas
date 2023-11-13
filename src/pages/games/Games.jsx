@@ -62,6 +62,7 @@ function Games() {
 
   return (
     <div className="games-main" id="games">
+      <span className="games-bg"></span>
       <div className="games-title">
         <img src={gamesImg} alt="games" />
       </div>

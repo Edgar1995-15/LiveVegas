@@ -22,6 +22,16 @@
   max-width: 300px;
 }
 
+.games-bg {
+  background-image: url("../../assets/background/Ellipse\ 1539.png");
+  position: absolute;
+  background-size: contain;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1400px) {
   .games-img {
     max-height: 300px;

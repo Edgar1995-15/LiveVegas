@@ -4,12 +4,14 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background-size: auto;
 }
-.background2 {
-  /* background-image: url("./assets/background/bg3.png"); */
+.App {
   background: #111;
+}
+.background2 {
+  background-image: url("./assets/background/bg3.png");
 }
 .background3 {
   background-image: url("./assets/background/bg3.png");

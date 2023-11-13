@@ -1,6 +1,8 @@
 .vip-main {
   width: 100%;
   position: relative;
+}
+.vip-hidden {
   overflow: hidden;
 }
 .vip-title {
@@ -42,6 +44,16 @@
 }
 .vip3 {
     animation: slideFromBottom 4s ease-in-out;
+}
+
+.vip-bg {
+  background-image: url("../../assets/background/Ellipse\ 1538.png");
+  position: absolute;
+  background-size: contain;
+  width: 200%;
+  height: 200%;
+  top: -20%;
+  left: 50%;
 }
 
 @media (max-width: 768px) {
