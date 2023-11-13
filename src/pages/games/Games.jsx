@@ -47,7 +47,7 @@ function Games() {
   const [startAnimations, setStartAnimations] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const gamesSection = document.getElementById("games");
+      const gamesSection = document.querySelector(".card");
       if (gamesSection) {
         const rect = gamesSection.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom >= 0) {

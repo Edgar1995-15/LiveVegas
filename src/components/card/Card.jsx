@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import './card.css';
+import React, { useState, useEffect, useRef } from "react";
+import "./card.css";
 
 const Card = ({ id, animationDirection, imgUrl }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -8,16 +8,15 @@ const Card = ({ id, animationDirection, imgUrl }) => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '0px',
+      rootMargin: "0px",
       threshold: 0.5,
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.target === cardRef.current) {
-          if (entry.isIntersecting && entry.boundingClientRect.top > 0) {
-            setIsVisible(true);
-          }
+        if (entry.target === cardRef.current && entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
         }
       });
     }, options);
@@ -35,7 +34,7 @@ const Card = ({ id, animationDirection, imgUrl }) => {
         ref={cardRef}
         id={id}
         className={`card ${animationDirection}-animation ${
-          isVisible ? 'mobileanimation' : ''
+          isVisible ? "mobileanimation" : ""
         }`}
       >
         {isVisible && <img src={imgUrl} alt="game" />}
