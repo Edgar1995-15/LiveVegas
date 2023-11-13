@@ -59,6 +59,8 @@
 @media (max-width: 768px) {
   .vip-main {
     min-height: 180vh;
+    background-image: url("../../assets/background/bg2.png");
+    background-size: cover;
   }
   .vip-games img {
     max-width: 150px;
@@ -81,6 +83,9 @@
   }
   .vip3 {
     animation: slideFromRight 4s ease-in-out;
+  }
+  .vip-bg {
+    display: none;
   }
 }
 

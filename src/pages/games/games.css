@@ -26,10 +26,10 @@
   background-image: url("../../assets/background/Ellipse\ 1539.png");
   position: absolute;
   background-size: contain;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
+  bottom: -50%;
+  left: 50%;
 }
 
 @media (max-width: 1400px) {
@@ -39,7 +39,13 @@
 }
 
 @media (max-width: 768px) {
+  .games-main {
+    background-image: url("../../assets/background/bg3.png");
+  }
   .games-cards {
     width: 100%;
+  }
+  .games-bg {
+    display: none;
   }
 }
