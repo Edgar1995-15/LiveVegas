@@ -1,35 +1,41 @@
-.games-main {    
-    width: 100%;
-    position: relative;
+.games-main {
+  width: 100%;
+  position: relative;
 }
 .games-cards {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 .view-btn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
 }
 .games-title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 .games-title img {
-    object-fit: contain;
-    max-width: 300px;
+  object-fit: contain;
+  max-width: 300px;
 }
 
 @media (max-width: 1400px) {
-    .games-img {
-        max-height: 300px;
-    }
+  .games-img {
+    max-height: 300px;
+  }
 }
 
 @media (max-width: 768px) {
-    .games-cards {
-        width: 100%;
-    }
+  .games-cards {
+    width: 100%;
+  }
 }
+/* min-width */
+/* @media (min-width: 478px) {
+  .games-main {
+    margin-top: 200px;
+  }
+} */

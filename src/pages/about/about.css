@@ -1,6 +1,7 @@
 .about-main {
   width: 100%;
   position: relative;
+  padding-bottom: 100px;
 }
 .about-content {
   width: 80%;
@@ -59,7 +60,7 @@
   }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 768px) {
   .about-main {
     height: auto;
   }

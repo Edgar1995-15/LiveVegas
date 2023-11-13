@@ -1,99 +1,129 @@
 .main {
-    width: 100%;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 .layer1 {
-    background-image: url("../../assets/background/ellipse1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
+  background-image: url("../../assets/background/Ellipse\ 1539.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  animation: swapLayers2 10s infinite; /* Adjust the duration as needed */
+  animation-timing-function: linear;
 }
 .layer2 {
-    background-image: url("../../assets/background/ellipse2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  background-image: url("../../assets/background/Ellipse\ 1538.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  animation: swapLayers 10s infinite; /* Use the same duration as for layer1 */
+  animation-timing-function: linear;
 }
 .main-content {
-    width: 90%;
-    display: flex;
+  width: 90%;
+  display: flex;
 }
 .main-title {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .title {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
 }
 .left-title {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 .right-title {
-    display: flex;
-    justify-content: flex-end;
-    animation: flicker 6s infinite;
+  display: flex;
+  justify-content: flex-end;
+  animation: flicker 6s infinite;
 }
 .description {
-    color: #fff;
-    margin-top: 80px;
-    width: 50%;
+  color: #fff;
+  margin-top: 80px;
+  width: 50%;
 }
 .actions {
-    display: flex;
-    gap: 30px;
-    margin-top: 60px;
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+  z-index: 9999;
 }
 
 @media (max-width: 968px) {
-    .title img {
-        max-width: 250px;
-    }
+  .title img {
+    max-width: 250px;
+  }
 }
 
 @media (max-width: 768px) {
-    .description {
-        width: 95%;
-    }
-    .main {
-        height: auto;
-    }
+  .description {
+    width: 95%;
+  }
+  .main {
+    height: auto;
+  }
 }
 
 @media (max-width: 468px) {
-    .actions {
-        gap: 5px;
-        margin-bottom: 60px;
-    }
-    .main-content {
-        width: 95%;
-    }
-    .title {
-        width: 100%;
-    }
+  .actions {
+    gap: 5px;
+    margin-bottom: 60px;
+  }
+  .main-content {
+    width: 95%;
+  }
+  .title {
+    width: 100%;
+  }
 }
 
 @keyframes flicker {
-    0%, 20%, 40% {
-      opacity: 1;
+  0%,
+  20%,
+  40% {
+    opacity: 1;
+  }
+  10%,
+  30%,
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes swapLayers {
+    0%, 100% {
+      transform: translateX(0);
     }
-    10%, 30%, 50% {
-      opacity: 0;
+    50% {
+      transform: translateX(100%); /* Swap positions */
+    }
+  }
+
+  @keyframes swapLayers2 {
+    0%,
+   100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-100%); /* Move layer1 to the right and layer2 to the left */
     }
   }

@@ -4,7 +4,12 @@
 }
 
 body {
-  background-image: url("./assets/background/Animation.png");
   overflow-x: hidden;
   background-size: auto;
+}
+.background2 {
+  background-image: url("./assets/background/bg3.png");
+}
+.background3 {
+  background-image: url("./assets/background/bg3.png");
 }

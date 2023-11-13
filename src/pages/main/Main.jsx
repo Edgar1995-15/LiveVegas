@@ -13,8 +13,8 @@ function Main() {
   };
   return (
     <div className="main">
-      {/* <div className="layer1"></div>
-      <div className="layer2"></div> */}
+      <div className="layer1"></div>
+      <div className="layer2"></div>
       <div className="main-content">
         <div className="main-title">
           <div className="title">

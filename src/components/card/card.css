@@ -24,10 +24,14 @@
 
 .left-animation {
   animation: slideFromLeft 1s ease-in-out;
+  display: flex;
+  justify-content: center;
 }
 
 .right-animation {
   animation: slideFromRight 1.5s ease-in-out;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 500px) {
