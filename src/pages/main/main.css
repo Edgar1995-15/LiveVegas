@@ -34,7 +34,7 @@
   animation-timing-function: linear;
 }
 .main-content {
-  width: 90%;
+  width: 100%;
   display: flex;
 }
 .main-title {
@@ -91,9 +91,6 @@
   .actions {
     gap: 5px;
     margin-bottom: 60px;
-  }
-  .main-content {
-    width: 95%;
   }
   .title {
     width: 100%;

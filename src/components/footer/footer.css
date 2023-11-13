@@ -36,9 +36,6 @@
 }
 
 @media (max-width: 468px) {
-    .footer {
-        padding-top: 100px;
-    }
     .footer-logo {
         max-width: 100px;
     }
