@@ -1,12 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './card.css';
 
+const Card = ({ id, animationDirection, imgUrl }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const cardRef = useRef(null);
 
-const Card = ({ animationDirection, imgUrl }) => {
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.target === cardRef.current) {
+          if (entry.isIntersecting && entry.boundingClientRect.top > 0) {
+            setIsVisible(true);
+          }
+        }
+      });
+    }, options);
+
+    observer.observe(cardRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <div className={`card ${animationDirection}-animation`}>
-      <img src={imgUrl} alt="" />
-    </div>
+    <>
+      <div
+        ref={cardRef}
+        id={id}
+        className={`card ${animationDirection}-animation ${
+          isVisible ? 'mobileanimation' : ''
+        }`}
+      >
+        {isVisible && <img src={imgUrl} alt="game" />}
+      </div>
+    </>
   );
 };
 

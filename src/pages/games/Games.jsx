@@ -14,28 +14,33 @@ import ultimate from "../../assets/cardIcons/ultimate.png";
 
 function Games() {
   const cardsData = [
-    { content: "6 CARD POKER", imgUrl: sixcard },
+    { content: "6 CARD POKER", imgUrl: sixcard, id: "card1" },
     {
       content: "ROULETTE",
       imgUrl: classicroulette,
+      id: "card2"
     },
     {
       content: "RUSSIAN POKER",
       imgUrl: russianpoker,
+      id: "card3"
     },
     {
       content: "TEXAS HOLD'EM",
       imgUrl: texasholdem,
+      id: "card4"
     },
-    { content: "BACCARAT", imgUrl: baccarat },
+    { content: "BACCARAT", imgUrl: baccarat, id: "card5" },
     {
       content: "AUTO ROULETTE",
       imgUrl: autoroulette,
+      id: "card6"
     },
-    { content: "BLACKJACK", imgUrl: bj },
+    { content: "BLACKJACK", imgUrl: bj, id: "card7" },
     {
       content: "ULTIMATE TEXAS HOLD'EM",
       imgUrl: ultimate,
+      id: "card8"
     },
   ];
 
@@ -68,13 +73,14 @@ function Games() {
       </div>
       <div className="games-cards">
         <div className="card-grid">
-          {cardsData.map((card, index) => (
+        {cardsData.map((card) => (
             <Card
-              key={index}
+              key={card.id}
               content={card.content}
               imgUrl={card.imgUrl}
+              id={card.id}
               animationDirection={
-                startAnimations ? (index < 4 ? "left" : "right") : "hidden"
+                startAnimations ? (card.id < "card5" ? "left" : "right") : "hidden"
               }
             />
           ))}
