@@ -1,8 +1,9 @@
 .header {
   height: 150px;
-  background-image: url('../../assets/background/bg1.png');
   display: flex;
   align-items: center;
+  margin-top: -100px;
+  z-index: 9999;
 }
 .header-content {
   margin: 0 auto;
@@ -83,6 +84,9 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    margin-top: 0px;
+  }
   .logo-block img {
     max-width: 150px;
   }

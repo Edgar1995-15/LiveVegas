@@ -3,6 +3,7 @@ import "./main.css";
 import Button from "../../components/button/Button";
 import liveBold from "../../assets/titles/liveBold.png";
 import winBolder from "../../assets/titles/winBolder.png";
+import Header from "../../components/header/Header";
 
 function Main() {
   const scrollToSection = (sectionId) => {
@@ -13,6 +14,7 @@ function Main() {
   };
   return (
     <div className="main">
+      <Header />
       <div className="layer1"></div>
       <div className="layer2"></div>
       <div className="main-content">

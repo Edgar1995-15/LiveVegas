@@ -11,7 +11,6 @@ import VipRooms from "./pages/vip/VipRooms";
 function App() {
   return (
     <div className="App">
-      <Header />
       <div className="background2">
         <Main />
         <Games />

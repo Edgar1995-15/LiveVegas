@@ -5,6 +5,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
+  flex-direction: column;
 }
 .layer1 {
   background-image: url("../../assets/background/Ellipse\ 1539.png");
@@ -80,6 +81,9 @@
   }
   .main {
     height: auto;
+  }
+  .layer1, .layer2 {
+    display: none;
   }
 }
 
