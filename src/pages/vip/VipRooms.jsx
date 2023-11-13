@@ -17,20 +17,24 @@ const VipRooms = () => {
   useEffect(() => {
     const handleScroll = () => {
       const vipSection = document.getElementById("vip");
-      if (!showImages && vipSection) {
+      if (vipSection) {
         const rect = vipSection.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
           setShowImages(true);
+        } else {
+          // Element is out of view, reset the animation
+          setShowImages(false);
         }
       }
     };
-
+  
     window.addEventListener("scroll", handleScroll);
-
+  
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [showImages]);
+  }, []);
+  
 
   return (
     <div className={`vip-main ${showImages ? "show-images" : ""}`} id="vip">

@@ -40,28 +40,25 @@ function Games() {
   ];
 
   const [startAnimations, setStartAnimations] = useState(false);
-
   useEffect(() => {
-    // Check if the element is in the viewport
     const handleScroll = () => {
       const gamesSection = document.getElementById("games");
-      if (!startAnimations && gamesSection) {
+      if (gamesSection) {
         const rect = gamesSection.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
-          // The games section is in the viewport, start the animations
           setStartAnimations(true);
+        } else {
+          setStartAnimations(false);
         }
       }
     };
 
-    // Attach the scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [startAnimations]);
+  }, []);
 
   return (
     <div className="games-main" id="games">
@@ -75,7 +72,9 @@ function Games() {
               key={index}
               content={card.content}
               imgUrl={card.imgUrl}
-              animationDirection={startAnimations ? (index < 4 ? "left" : "right") : "hidden"}
+              animationDirection={
+                startAnimations ? (index < 4 ? "left" : "right") : "hidden"
+              }
             />
           ))}
         </div>

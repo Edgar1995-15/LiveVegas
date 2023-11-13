@@ -8,21 +8,25 @@ function About() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const aboutSection = document.getElementById("about");
-      if (!showImages && aboutSection) {
-        const rect = aboutSection.getBoundingClientRect();
+      const vipSection = document.getElementById("about");
+      if (vipSection) {
+        const rect = vipSection.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
           setShowImages(true);
+        } else {
+          // Element is out of view, reset the animation
+          setShowImages(false);
         }
       }
     };
-
+  
     window.addEventListener("scroll", handleScroll);
-
+  
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [showImages]);
+  }, []);
+  
 
   return (
     <div className="about-main" id="about">
