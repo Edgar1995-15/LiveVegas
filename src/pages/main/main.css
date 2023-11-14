@@ -98,17 +98,27 @@
 }
 
 @keyframes flicker {
-  0%,
-  20%,
-  40% {
-    opacity: 1;
-  }
-  10%,
-  30%,
-  50% {
+  0%, 50% {
     opacity: 0;
   }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
 }
+
+
 
 @keyframes swapLayers {
     0%, 100% {

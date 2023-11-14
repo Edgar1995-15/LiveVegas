@@ -17,42 +17,52 @@ function Games() {
     {
       content: "ROULETTE",
       imgUrl: classicroulette,
-      id: "card2"
+      id: "card2",
     },
     {
       content: "RUSSIAN POKER",
       imgUrl: russianpoker,
-      id: "card3"
+      id: "card3",
     },
     {
       content: "TEXAS HOLD'EM",
       imgUrl: texasholdem,
-      id: "card4"
+      id: "card4",
     },
     { content: "BACCARAT", imgUrl: baccarat, id: "card5" },
     {
       content: "AUTO ROULETTE",
       imgUrl: autoroulette,
-      id: "card6"
+      id: "card6",
     },
     { content: "BLACKJACK", imgUrl: bj, id: "card7" },
     {
       content: "ULTIMATE TEXAS HOLD'EM",
       imgUrl: ultimate,
-      id: "card8"
+      id: "card8",
     },
   ];
 
   const [startAnimations, setStartAnimations] = useState(false);
+  const [startAnimations2, setStartAnimations2] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const gamesSection = document.querySelector(".card");
+      const gamesSection = document.querySelector("#card1");
       if (gamesSection) {
         const rect = gamesSection.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
           setStartAnimations(true);
         } else {
           setStartAnimations(false);
+        }
+      }
+      const gamesSection2 = document.querySelector("#card8");
+      if (gamesSection2) {
+        const rect = gamesSection2.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          setStartAnimations2(true);
+        } else {
+          setStartAnimations2(false);
         }
       }
     };
@@ -72,14 +82,17 @@ function Games() {
       </div>
       <div className="games-cards">
         <div className="card-grid">
-        {cardsData.map((card) => (
+          {cardsData.map((card) => (
             <Card
               key={card.id}
               content={card.content}
               imgUrl={card.imgUrl}
               id={card.id}
               animationDirection={
-                startAnimations ? (card.id < "card5" ? "left" : "right") : "hidden"
+                startAnimations ? (card.id < "card5" ? "left" : "") : "hidden"
+              }
+              animationDirection2={
+                startAnimations2 ? (card.id > "card4" ? "right" : "") : "hidden"
               }
             />
           ))}

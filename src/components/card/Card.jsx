@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import "./card.css";
 
-const Card = ({ id, animationDirection, imgUrl }) => {
+const Card = ({ id, animationDirection, imgUrl, animationDirection2 }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -15,7 +15,7 @@ const Card = ({ id, animationDirection, imgUrl }) => {
     }
   }, [inView]);
 
-  const cardClassName = `card ${animationDirection}-animation ${
+  const cardClassName = `card ${animationDirection}-animation ${animationDirection2}-animation ${
     isVisible ? "mobileanimation" : ""
   }`;
 
