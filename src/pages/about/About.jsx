@@ -13,9 +13,6 @@ function About() {
         const rect = vipSection.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
           setShowImages(true);
-        } else {
-          // Element is out of view, reset the animation
-          setShowImages(false);
         }
       }
     };

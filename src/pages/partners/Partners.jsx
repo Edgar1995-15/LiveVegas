@@ -1,6 +1,6 @@
 import React from "react";
 import "./partners.css";
-import becomePartners from "../../assets/becomepartner.png";
+import becomePartners from "../../assets/titles/becomepartner.png";
 import betconstruct from "../../assets/betconstruct.png";
 import pokerdom from "../../assets/pokerdom.png";
 import uk from "../../assets/unitedkingdom.png";

@@ -21,9 +21,9 @@ function Header() {
         </div>
         <div className="list">
           <ul className="desktop-list">
+            <li>MY ASSETS</li>
             <li onClick={() => scrollToSection("games")}>GAMES</li>
             <li onClick={() => scrollToSection("about")}>ABOUT</li>
-            <li onClick={() => scrollToSection("contact-us")}>CONTACT US</li>
             <li onClick={() => scrollToSection("vip")}>
               <button className="vip-button">VIp rooms</button>
             </li>
@@ -33,12 +33,10 @@ function Header() {
             <img src={menu} alt="menu" onClick={() => setIsVisible(true)} />
             {isVisible && (
               <div className="opened-menu">
+                <li>MY ASSETS</li>
                 <li onClick={() => scrollToSection("games")}>GAMES</li>
                 <li onClick={() => scrollToSection("about")}>ABOUT</li>
-                <li onClick={() => scrollToSection("contact-us")}>
-                  CONTACT US
-                </li>
-                <li>VIP ROOMS</li>
+                <li onClick={() => scrollToSection("vip")}>VIP ROOMS</li>
                 <div className="close-menu" onClick={() => setIsVisible(false)}>
                   <img src={close} alt="close" />
                 </div>

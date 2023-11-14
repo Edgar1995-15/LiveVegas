@@ -22,7 +22,9 @@ const VipRooms = () => {
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
           setShowImages(true);
         } else {
-          setShowImages(false);
+          if (window.innerWidth > 768) {
+            setShowImages(false);
+          }
         }
       }
     };

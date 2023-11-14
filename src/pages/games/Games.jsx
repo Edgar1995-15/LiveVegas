@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./games.css";
 import gamesImg from "../../assets/titles/games.png";
 import Card from "../../components/card/Card";
-import Button from "../../components/button/Button";
 import sixcard from "../../assets/cardIcons/example1.png";
 import classicroulette from "../../assets/cardIcons/classicRoulette.png";
 import russianpoker from "../../assets/cardIcons/russianpoker.png";
@@ -84,9 +83,6 @@ function Games() {
               }
             />
           ))}
-        </div>
-        <div className="view-btn">
-          <Button text="VIEW MORE" className="filled-button" />
         </div>
       </div>
     </div>

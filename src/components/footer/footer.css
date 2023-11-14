@@ -18,6 +18,10 @@
     flex-direction: column;
     gap: 20px;
 }
+.footer-content img {
+    max-width: 150px;
+    max-height: 60px;
+}
 .mailto a {
     font-size: 20px;
     color: #F8FFFC;
@@ -32,12 +36,12 @@
 }
 
 .socials a:hover path {
-    fill: #06EEE0; /* Change the fill color to #06EEE0 on hover */
+    fill: #06EEE0;
 }
 
 @media (max-width: 468px) {
     .footer-logo {
-        max-width: 100px;
+        max-width: 100px !important;
     }
     .footer-content {
         width: 90%;

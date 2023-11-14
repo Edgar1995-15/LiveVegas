@@ -1,6 +1,7 @@
 .games-main {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .games-cards {
   width: 80%;

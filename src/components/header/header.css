@@ -12,8 +12,8 @@
   justify-content: space-between;
 }
 .logo-block img {
-  max-width: 177px;
-  max-height: 79px;
+  max-width: 150px;
+  max-height: 60px;
 }
 .logo-block {
   z-index: 99999999;

@@ -60,6 +60,8 @@
   }
   .mobileanimation {
     animation: slideFromLeft 1s ease-in-out;
+    display: flex;
+    justify-content: center;
   }
 }
 
