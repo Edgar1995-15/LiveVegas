@@ -1,22 +1,36 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./main.css";
 import Button from "../../components/button/Button";
 import liveBold from "../../assets/titles/liveBold.png";
 import winBolder from "../../assets/titles/winBolder.png";
 import Header from "../../components/header/Header";
+import { useTranslation } from "react-i18next";
+import fusion from "../../assets/background/2.mp4"
 
 function Main() {
+  const { t } = useTranslation();
+  const videoRef = useRef(null);
   const scrollToSection = (sectionId) => {
     const sectionElement = document.getElementById(sectionId);
     if (sectionElement) {
       sectionElement.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.6;
+    }
+  }, []);
+
   return (
     <div className="main">
+      <div className="fullscreen-video">
+        <video ref={videoRef} src={fusion} autoPlay loop muted />
+      </div>
       <Header />
-      <div className="layer1"></div>
-      <div className="layer2"></div>
+      {/* <div className="layer1"></div>
+      <div className="layer2"></div> */}
       <div className="main-content">
         <div className="main-title">
           <div className="title">
@@ -27,16 +41,7 @@ function Main() {
               <img src={winBolder} alt="win bolder" />
             </div>
           </div>
-          <p className="description">
-            Live Vegas Online Casino is your gateway to exceptional gaming. We
-            offer a bespoke and flawless experience for every player with our
-            portfolio of , our commitment to top-level technological solutions
-            and advanced streaming technologies. Discover the pinnacle of
-            personalised entertainment with us. Our mission is to provide you
-            with the ultimate online casino experience. We are committed to
-            delivering top-notch entertainment in a exclusive games and VIP
-            rooms safe and responsible environment.
-          </p>
+          <p className="description">{t("headerText")}</p>
           <div className="actions">
             <Button
               text="CONTACT US"

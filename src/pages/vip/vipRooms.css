@@ -11,11 +11,11 @@
   display: flex;
   justify-content: center;
   margin-top: 130px;
-  margin-bottom: 60px;
 }
 .vip-text {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .vip-text p {
   font-size: 30px;
@@ -27,26 +27,76 @@
   justify-content: center;
 }
 .left-games {
-  animation: slideFromLeft 1s ease-in-out;
+  animation: slideFromLeft 1.5s ease-in-out;
 }
 .right-games {
-  animation: slideFromRight 1s ease-in-out;
+  animation: slideFromRight 1.5s ease-in-out;
 }
 
 .vip-desc {
   display: flex;
   justify-content: center;
+  margin: auto;
+  width: 90%;
   gap: 40px;
   margin-top: 60px;
 }
 .vip1 {
-    animation: slideFromBottom 2s ease-in-out;
+  animation: slideFromBottom 2s ease-in-out;
+  width: 33%;
+  height: auto;
+  max-height: 200px;
+  background: rgba(26, 26, 26, 0.8);
+  border-radius: 20px;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 .vip2 {
-    animation: slideFromBottom 3s ease-in-out;
+  animation: slideFromBottom 3s ease-in-out;
+  width: 33%;
+  height: auto;
+  background: rgba(26, 26, 26, 0.8);
+  border-radius: 20px;
+  margin-top: 50px;
+  position: relative;
+  padding-top: 20px;
 }
 .vip3 {
-    animation: slideFromBottom 4s ease-in-out;
+  animation: slideFromBottom 4s ease-in-out;
+  width: 33%;
+  height: auto;
+  background: rgba(26, 26, 26, 0.8);
+  border-radius: 20px;
+  margin-top: 50px;
+  position: relative;
+  padding-top: 20px;
+}
+.vip-enum {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: -40%;
+}
+
+.vip-content {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32.5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.secondary-text {
+  color: rgba(156, 79, 255, 1);
 }
 
 .vip-bg {
@@ -59,36 +109,81 @@
   left: 50%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  .vip-title {
+    margin-top: 60px;
+    font-size: 25px;
+    margin-bottom: 0;
+  }
   .vip-main {
-    min-height: 180vh;
+    min-height: 175vh;
     background-image: url("../../assets/background/bg2.png");
     background-size: cover;
+    background-position-x: 100%;
   }
   .vip-games img {
-    max-width: 150px;
+    max-width: 160px !important;
+    max-height: 70px !important;
+    object-fit: contain;
   }
   .vip-desc {
     flex-direction: column;
     align-items: center;
+    margin-top: 40px !important;
   }
   .vip-desc img {
-    max-width: 150px;
+    max-width: 150px; 
+  }
+  .vip-text {
+    width: 90%;
+    margin: auto;
   }
   .vip-text p {
     text-align: center;
+    font-size: 16px;
   }
   .vip1 {
     animation: slideFromRight 2s ease-in-out;
+    width: 80%;
+    padding-top: 30px;
   }
   .vip2 {
     animation: slideFromRight 3s ease-in-out;
+    width: 80%;
+    padding-top: 30px;
   }
   .vip3 {
     animation: slideFromRight 4s ease-in-out;
+    width: 80%;
+    padding-top: 30px;
   }
   .vip-bg {
     display: none;
+  }
+  .left-games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1300px) {
+  .vip-desc {
+    max-width: 100% !important;
+  }
+  .vip-content {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .vip-content {
+    font-size: 14px;
   }
 }
 

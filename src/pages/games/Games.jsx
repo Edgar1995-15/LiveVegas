@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./games.css";
-import gamesImg from "../../assets/titles/games.png";
 import Card from "../../components/card/Card";
 import sixcard from "../../assets/cardIcons/example1.png";
 import classicroulette from "../../assets/cardIcons/classicRoulette.png";
@@ -10,8 +9,10 @@ import baccarat from "../../assets/cardIcons/baccarat.png";
 import autoroulette from "../../assets/cardIcons/autoroulette.png";
 import bj from "../../assets/cardIcons/bj.png";
 import ultimate from "../../assets/cardIcons/ultimate.png";
+import { useTranslation } from "react-i18next";
 
 function Games() {
+  const { t } = useTranslation();
   const cardsData = [
     { content: "6 CARD POKER", imgUrl: sixcard, id: "card1" },
     {
@@ -77,8 +78,8 @@ function Games() {
   return (
     <div className="games-main" id="games">
       <span className="games-bg"></span>
-      <div className="games-title">
-        <img src={gamesImg} alt="games" />
+      <div className="games-title global-titles-green">
+        <h1>{t("games")}</h1>
       </div>
       <div className="games-cards">
         <div className="card-grid">

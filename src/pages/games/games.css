@@ -16,11 +16,6 @@
 .games-title {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
-}
-.games-title img {
-  object-fit: contain;
-  max-width: 300px;
 }
 
 .games-bg {
@@ -33,20 +28,18 @@
   left: 50%;
 }
 
-@media (max-width: 1400px) {
-  .games-img {
-    max-height: 300px;
-  }
-}
-
 @media (max-width: 768px) {
   .games-main {
     background-image: url("../../assets/background/bg3.png");
+    background-size: cover;
   }
   .games-cards {
     width: 100%;
   }
   .games-bg {
     display: none;
+  }
+  .games-title {
+    font-size: 30px;
   }
 }

@@ -38,21 +38,51 @@
 .socials a:hover path {
     fill: #06EEE0;
 }
+.footer-reverse {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding-right: 100px;
+}
+.socials {
+    position: absolute;
+    right: 0;
+}
 
 @media (max-width: 468px) {
+    .footer {
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .footer-logo {
         max-width: 100px !important;
     }
     .footer-content {
         width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mailto {
+        flex-direction: row;
+        margin-top: 20px;
     }
     .mailto a {
         font-size: 12px;
     }
     .socials {
         gap: 10px;
+        position: relative;
     }
     .socials a img {
         max-width: 25px;
+    }
+    .footer-reverse {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding-right: 0;
+        align-items: center;
     }
 }

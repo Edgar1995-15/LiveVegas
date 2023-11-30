@@ -3,7 +3,7 @@
   box-shadow: 0px 0px 15px 0px #06EEE04D;
 }
 .partners-title {
-  padding-top: 100px;
+  padding-top: 40px;
   display: flex;
   justify-content: center;
 }
@@ -23,22 +23,25 @@
 }
 .info-numbers {
   font-size: 78px;
-  color: #06EEE0;
+  color: #053431;
   text-align: center;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-weight: 700;
 }
 .info-titles {
   text-align: center;
   font-size: 35px;
   font-weight: 600;
   color: #fff;
+  margin-top: 0;
 }
 .partners-logos {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
-  margin-top: 106px;
+  margin-top: 60px;
 }
 .partners-logos img {
   width: 200px;
@@ -48,8 +51,8 @@
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin-top: 100px;
-  padding-bottom: 120px;
+  margin-top: 40px;
+  padding-bottom: 80px;
 }
 
 @media (max-width: 1200px) {
@@ -86,7 +89,7 @@
     max-width: 80%;
   }
   .our-info ul {
-    gap: 20px;
+    gap: 10px;
     margin-right: 40px;
   }
   .info-numbers {
@@ -95,8 +98,16 @@
   .info-titles {
     font-size: 16px;
   }
+  .partners-logos {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    gap: 40px;
+  }
   .partners-logos img {
-    max-width: 150px;
+    max-width: 100px;
   }
   .flags {
     gap: 20px;

@@ -62,11 +62,17 @@
 }
 
 @media (max-width: 768px) {
+  .about-title {
+    margin-top: 0;
+    font-size: 30px;
+  }
   .about-main {
     height: auto;
   }
   .about-content {
     flex-direction: column;
+    gap: 40px;
+    padding-top: 0;
   }
   .about-image {
     width: 100%;

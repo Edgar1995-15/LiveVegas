@@ -10,9 +10,22 @@ body {
 .App {
   background: #111;
 }
-.background2 {
-  background-image: url("./assets/background/bg3.png");
-}
 .background3 {
   background-image: url("./assets/background/bg3.png");
 }
+.global-titles-green {
+  -webkit-text-stroke: 2px rgba(6, 238, 224, 1);
+  text-stroke: 2px rgba(6, 238, 224, 1);
+  font-size: 40px;
+  color: rgba(5, 52, 49, 1);
+  text-shadow: 0px 0px 17.200000762939453px rgba(6, 238, 224, 0.4);
+}
+
+.global-titles-purple {
+  -webkit-text-stroke: 2px rgba(156, 79, 255, 1);
+  text-stroke: 2px rgba(156, 79, 255, 1);
+  font-size: 40px;
+  color: rgba(34, 0, 61, 1);
+  text-shadow: 0px 0px 28px rgba(92, 5, 202, 1);
+}
+

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./about.css";
 import aboutImage from "../../assets/g-image.png";
-import aboutTitle from "../../assets/titles/About us.png";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t } = useTranslation();
   const [showImages, setShowImages] = useState(false);
 
   useEffect(() => {
@@ -27,8 +28,8 @@ function About() {
 
   return (
     <div className="about-main" id="about">
-      <div className="about-title">
-        <img src={aboutTitle} alt="About US" />
+      <div className="about-title global-titles-green">
+        <h1>{t("aboutUs")}</h1>
       </div>
       <div className="about-content">
         <div className="about-image">
@@ -38,45 +39,31 @@ function About() {
           {showImages && (
             <>
               <div className="whoAreWe">
-                <p className="whotitle">WHO ARE WE</p>
+                <p className="whotitle">{t("whoAreWe")}</p>
                 <p>
-                  We are a dynamic team of dedicated professionals, united by
-                  our passion for all things tech. Our diverse expertise spans
-                  from software development and cybersecurity to cloud computing
-                  and AI. We thrive on challenges and are driven by the desire
-                  to solve complex problems with elegant solutions.
+                  {t("whoWeText")}
                 </p>
               </div>
               <div className="whatWeDo">
-                <p className="whotitle">WHAT WE DO</p>
+                <p className="whotitle">{t("whatWeDo")}</p>
                 <p>
-                  We specialize in crafting cutting-edge IT solutions tailored
-                  to your unique needs. From developing robust software
-                  applications to fortifying your digital defenses, we provide a
-                  full spectrum of IT services. Our commitment to staying at the
-                  forefront of technological advancements ensures that our
-                  clients are always one step ahead.
+                  {t("whatWeDoText")}
                 </p>
               </div>
               <div className="whyChoose">
-                <p className="whotitle">WHY CHOOSE US</p>
+                <p className="whotitle">{t("whyChooseUs")}</p>
                 <ul>
                   <li>
-                    Expertise: Our team consists of top-tier talent with a deep
-                    understanding of industry trends and emerging technologies.
+                    {t("expertise")}
                   </li>
                   <li>
-                    Innovation: We embrace innovation, constantly seeking new
-                    ways to improve and optimize your IT environment.
+                    {t("innovation")}
                   </li>
                   <li>
-                    Client-Centric: Your success is our priority. We work
-                    closely with you to understand your goals and deliver
-                    solutions that exceed your expectations.
+                    {t("clientCentric")}
                   </li>
                   <li>
-                    Reliability: We take pride in delivering on time and within
-                    budget, consistently meeting our commitments.
+                    {t("reliability")}
                   </li>
                 </ul>
               </div>

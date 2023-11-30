@@ -7,35 +7,17 @@
   overflow: hidden;
   flex-direction: column;
 }
-.layer1 {
-  background-image: url("../../assets/background/Ellipse\ 1539.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
+.fullscreen-video {
   position: absolute;
-  top: 0;
-  left: 50%;
-  animation: swapLayers2 10s infinite; /* Adjust the duration as needed */
-  animation-timing-function: linear;
+  width: 100%;
 }
-.layer2 {
-  background-image: url("../../assets/background/Ellipse\ 1538.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  animation: swapLayers 10s infinite; /* Use the same duration as for layer1 */
-  animation-timing-function: linear;
+.fullscreen-video video {
+  width: 100% !important;
 }
 .main-content {
   width: 100%;
   display: flex;
+  z-index: 2;
 }
 .main-title {
   width: 100%;
@@ -59,7 +41,7 @@
 }
 .description {
   color: #fff;
-  margin-top: 80px;
+  margin-top: 60px;
   width: 50%;
 }
 .actions {
@@ -67,6 +49,10 @@
   gap: 30px;
   margin-top: 60px;
   z-index: 9999;
+}
+
+.main-content img {
+  max-width: 500px;
 }
 
 @media (max-width: 968px) {
@@ -77,7 +63,7 @@
 
 @media (max-width: 768px) {
   .description {
-    width: 95%;
+    width: 80%;
   }
   .main {
     height: auto;
@@ -93,30 +79,27 @@
     margin-bottom: 60px;
   }
   .title {
-    width: 100%;
+    width: 83%;
   }
 }
 
 @keyframes flicker {
-  0%, 50% {
-    opacity: 0;
+  0%, 100% {
+    opacity: 1;
   }
-  10% {
-    opacity: 0.1;
+  30%, 40% {
+    opacity: 0.2;
   }
-  20% {
-    opacity: 0;
+  30%, 50%, 70%{
+    opacity: 0.04;
   }
-  30% {
-    opacity: 0.4;
-  }
-  40% {
-    opacity: 0;
-  }
-  90% {
+  80% {
     opacity: 1;
   }
 }
+
+
+
 
 
 

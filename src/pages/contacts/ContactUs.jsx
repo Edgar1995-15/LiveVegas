@@ -1,13 +1,14 @@
 import React from "react";
 import "./contactUs.css";
 import Button from "../../components/button/Button";
-import contactTitle from "../../assets/titles/Contacts.png";
+import { useTranslation } from "react-i18next";
 
 function ContactUs() {
+  const { t } = useTranslation();
   return (
     <div className="contact-main" id="contact-us">
-      <div className="contact-title">
-        <img src={contactTitle} alt="" />
+      <div className="contact-title global-titles-green">
+        <h1>{t("contactUS")}</h1>
       </div>
       <div className="contact-content">
         <form className="contacts-form">

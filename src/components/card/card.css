@@ -36,15 +36,17 @@
 
 @media (max-width: 500px) {
   .card {
-    width: 80% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    padding-top: 10px !important;
   }
   .card-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
   }
-  .games-img {
-    display: none;
+  .card img{
+    width: 180px !important;
   }
 }
 
@@ -62,6 +64,12 @@
     animation: slideFromLeft 1s ease-in-out;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 1540px) {
+  .card img {
+    max-width: 300px;
   }
 }
 

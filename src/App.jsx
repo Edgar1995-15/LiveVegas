@@ -11,11 +11,9 @@ function App() {
   return (
     <div className="App loading">
       <Main />
-      {/* <div className="background2" rel="preload"> */}
         <Games />
         <VipRooms />
         <About />
-      {/* </div> */}
       <Partners />
       <div className="background3">
         <ContactUs />
